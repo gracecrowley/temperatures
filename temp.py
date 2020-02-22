@@ -1,6 +1,6 @@
 # Exercise -Temperature Database
 def displayMenu():
-    choice = input('''Please choose from the following menu or press enter to end \n 
+    choice = input('''Please choose from the following menu or press * to end \n 
   Choose 1 to enter a new temperature measurement\n
   Choose 2 to retrieve a temperature for a given date \n
   Choose 3 to print all the temperature measurements \n
@@ -44,6 +44,7 @@ measDict = {}
 
 loop = True
 while loop == True:
+    print()
     choice = displayMenu()
     if choice == '1':
         measDict = enterNewMeasurement(measDict)
